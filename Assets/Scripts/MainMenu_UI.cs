@@ -18,7 +18,6 @@
 
 
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
 public class MainMenu_UI : MonoBehaviour {

@@ -1,6 +1,6 @@
 ﻿/****************************************************************************************/
 /*
-/* FILE NAME: CreditMenu.cs
+/* FILE NAME: CreditMenu_UI.cs
 /*
 /* DESCRIPTION: Models the behavior of the Credit Menu by specifying what back button in
 /*  the credit menu does. The method is public so the back button object can reference to 
