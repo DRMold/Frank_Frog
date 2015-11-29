@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: bb89733a8859b28439870b529c6ced37
 timeCreated: 1448740218
+=======
+guid: 0ebae3470d61b5b4faf0020da5e7466f
+timeCreated: 1448749885
+>>>>>>> 390acf958e7c73859706cf4cb22bd7ab742f61a1
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -29,7 +34,11 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: -1
+>>>>>>> 390acf958e7c73859706cf4cb22bd7ab742f61a1
     aniso: -1
     mipBias: -1
     wrapMode: -1
@@ -37,6 +46,10 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+<<<<<<< HEAD
+=======
+  allowsAlphaSplitting: 0
+>>>>>>> 390acf958e7c73859706cf4cb22bd7ab742f61a1
   spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
