@@ -2,14 +2,14 @@
 /*
 /* FILE NAME: PlayerControlWater.cs
 /*
-/* DESCRIPTION: Establishes the AI for the enemies incountered throughout the game.
+/* DESCRIPTION: Establishes player mechanics in water.
 /*
 /* REFERENCE:
 /*
 /* DATE         BY                  CHANGE REF  DESCRIPTION
 /* ========     =======             =========== =============
 /* 11/27/2015   John Rubadue        1CF: JM     Created the class & full implementation
-/*
+/* 11/29/2015   Ritchie Hofmann        "        Made not stupid.
 /*
 /*
 /****************************************************************************************/
@@ -18,10 +18,9 @@ using System.Collections;
 
 public class PlayerControlWater : MonoBehaviour {
     public float speed = 250f;
-    public LayerMask playerLayerMask;//
     Transform myTrans;
-    public Rigidbody myBody; 
-    Vector2 movement;//
+    public Rigidbody2D myBody; 
+    Vector2 movement;
     
 
 
@@ -33,11 +32,8 @@ public class PlayerControlWater : MonoBehaviour {
 
     void Update()
     {
-    
-#if !UNITY_ANDROID && !UNITY_IPHONE && !UNITY_BLACKBERRY && !UNITY_WINRT
         Move1(Input.GetAxisRaw("Horizontal"));
         Move2(Input.GetAxisRaw("Vertical"));
-#endif
     }
     //x axis movement
     public void Move1(float horizontal_input)

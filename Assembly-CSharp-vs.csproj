@@ -48,8 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CreditMenu_UI.cs" />
+     <Compile Include="Assets\Scripts\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\EnemyAIonland.cs" />
      <Compile Include="Assets\Scripts\LevelSelectMenu_UI.cs" />
      <Compile Include="Assets\Scripts\MainMenu_UI.cs" />
+     <Compile Include="Assets\Scripts\PlayerControlLand.cs" />
+     <Compile Include="Assets\Scripts\PlayerControlWater.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
