@@ -24,7 +24,7 @@ public class BubbleController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Destroy (this.gameObject, 20);
+		Destroy (this.gameObject, 25);
 	}
 	
 	// Update is called once per frame
