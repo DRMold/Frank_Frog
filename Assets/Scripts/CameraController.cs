@@ -20,8 +20,6 @@ public class CameraController : MonoBehaviour {
 	public float MAX_X;
 	public float MIN_Y;
 	public float MAX_Y;
-	public float MIN_Z;
-	public float MAX_Z;
 
 	// Use this for initialization
 	void Start () {
@@ -62,14 +60,8 @@ public class CameraController : MonoBehaviour {
 	void Update () {
 		//transform.Translate(movement * speed * Time.deltaTime, Space.Self);
 		transform.position = new Vector3(
-			Mathf.Clamp(transform.position.x, MIN_X, MAX_X),
-			Mathf.Clamp(transform.position.y, MIN_Y, MAX_Y),
-			Mathf.Clamp(transform.position.z, MIN_Z, MAX_Z));
-//		float xAxisValue = Input.GetAxis("Horizontal");
-//		float yAxisValue = Input.GetAxis("Vertical");
-//		if(Camera.current != null)
-//		{
-//			Camera.current.transform.Translate(new Vector3(xAxisValue, yAxisValue, 0.0f));
-//		}
+			Mathf.Clamp(GameObject.FindGameObjectWithTag("Player").transform.position.x, MIN_X, MAX_X),
+			Mathf.Clamp(GameObject.FindGameObjectWithTag("Player").transform.position.y, MIN_Y, MAX_Y),
+			-8.0f);
 	}
 }

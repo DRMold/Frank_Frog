@@ -9,7 +9,7 @@
 /* DATE         BY                  CHANGE REF  DESCRIPTION
 /* ========     =======             =========== =============
 /* 11/27/2015   John Rubadue        1CF: JM     Created the class & full implementation
-/* 11/29/2015   Ritchie Hofmann        "        Made not stupid.
+/* 11/29/2015   Ritchie Hofmann        "        Fixed issues.
 /*
 /*
 /****************************************************************************************/
@@ -18,7 +18,6 @@ using System.Collections;
 
 public class PlayerControlWater : MonoBehaviour {
     public float speed = 250f;
-    Transform myTrans;
     public Rigidbody2D myBody; 
     Vector2 movement;
     
@@ -26,8 +25,7 @@ public class PlayerControlWater : MonoBehaviour {
 
     void Start()
     {
-        myTrans = this.transform;
-        
+     
     }
 
     void Update()
