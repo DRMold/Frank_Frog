@@ -24,7 +24,9 @@ public class MainMenu_UI : MonoBehaviour {
 
     // The start button is pressed
     public void PlayGame()
-    { Application.LoadLevel(1); } // In build settings, level 0 is assigned integer 1
+    { 
+		Application.LoadLevel(1); // In build settings, level 0 is assigned integer 1
+	}
 
     // The load level button is pressed
     public void StartLevelSelect()
