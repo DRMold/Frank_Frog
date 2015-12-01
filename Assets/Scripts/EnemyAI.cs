@@ -22,13 +22,14 @@ public class EnemyAI : MonoBehaviour
 	private SpriteRenderer spR;
 	private GameController gameController;
 
-    public Transform player;
-    public float speed = 100f;
+        public Transform player;
+        public float speed = 100f;
 	public Sprite sprite1; 
 	public Sprite sprite2; 
 
 	public float maxDistance;
 
+	// Ends game when making contact with player
 	void OnCollisionEnter2D (Collision2D other) {
 		if (other.collider.tag == "Player") {
 			other.gameObject.GetComponent<SpriteRenderer>().sprite = null;
@@ -60,6 +61,7 @@ public class EnemyAI : MonoBehaviour
 //
 //		if (playerInFrontOfEnemy && playerCloseToEnemy) {
 
+                // Will follow player when they get close
 		if ((player.position - transform.position).sqrMagnitude < maxDistance) {
 			transform.LookAt (player.position);
 			transform.Rotate (new Vector3 (0, -90, 0), Space.Self);
@@ -67,6 +69,7 @@ public class EnemyAI : MonoBehaviour
 			if (Vector3.Distance (transform.position, player.position) > 1f)
 				transform.Translate (new Vector3 (speed * Time.deltaTime, 0, 0));
 
+			// Chomps at player
 			if (Vector3.Distance (transform.position, player.position) < 2.5f)
 				spR.sprite = sprite2;
 			else

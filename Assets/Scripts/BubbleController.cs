@@ -24,11 +24,13 @@ public class BubbleController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+	        // Set timer for this bubbles destruction
 		Destroy (this.gameObject, 25);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+	        // Gives bubble nice warble effect as it scrolls up
 		direction = -direction;
 		movement = myBody.velocity;
 		

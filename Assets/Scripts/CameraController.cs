@@ -59,6 +59,7 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//transform.Translate(movement * speed * Time.deltaTime, Space.Self);
+		// Sets camera boundaries and will follow the player
 		transform.position = new Vector3(
 			Mathf.Clamp(GameObject.FindGameObjectWithTag("Player").transform.position.x, MIN_X, MAX_X),
 			Mathf.Clamp(GameObject.FindGameObjectWithTag("Player").transform.position.y, MIN_Y, MAX_Y),

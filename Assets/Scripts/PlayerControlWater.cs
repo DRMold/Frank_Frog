@@ -16,6 +16,7 @@
 using UnityEngine;
 using System.Collections;
 
+// Player Boundaries
 [System.Serializable] 
 public class Boundary 
 { public float xMin, xMax, yMin, yMax; }
@@ -23,22 +24,21 @@ public class Boundary
 
 public class PlayerControlWater : MonoBehaviour {
     public float speed = 250f;
-	public Boundary boundary;
+    public Boundary boundary;
     public Rigidbody2D myBody; 
     Vector2 movement;
 
     void Start()
-    {
-	}
+    { }
 
-	void FixedUpdate()  
-	{
+    void FixedUpdate()  
+    {
 		//pick up movement from user input
 		//myBody.transform.rotation = Quaternion.identity;
 		float moveHorizontal = Input.GetAxis("Horizontal");
 		float moveVertical   = Input.GetAxis("Vertical");
 		applyMovement (moveHorizontal, moveVertical);
-	}
+    }
 
 	public void applyMovement(float moveHorizontal, float moveVertical) 
 	{		

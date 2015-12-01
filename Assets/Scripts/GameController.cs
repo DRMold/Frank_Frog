@@ -16,29 +16,33 @@ using UnityEngine;
 using System.Collections;
 
 public class GameController : MonoBehaviour {
-	// User-Added vars
-
+	
 //------------------Game Mechanic Variables-----------------------------------------------
 	private bool gameOver;
 	private bool paused;
 	private int score;
 
 //------------------Water Animation Variables---------------------------------------------
+        // User-Added vars
 //	public Material lr1_tex;
 	public Material lr2_tex;
 	public Material ud1_tex;
 	public GameObject player;
-	// User-Manipulated vars
+
+        // User-Manipulated vars
 	public int zPlane = -1;
 	public float lrScroll = 5;
 	public float udScroll = 5;
-	// Create quads
+
+        // Create quads
 //	private GameObject lr1;
 	private GameObject lr2;
 	private GameObject ud1;
-	// player vars
+
+        // player vars
 	private Vector2 lastPosition;
-	// animator vars
+
+        // animator vars
 //	private Material lr1_material;
 	private Material lr2_material;
 	private Material ud1_material;
@@ -77,14 +81,6 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// We are checking whether or not the keyboard key 'P' is pressed
-		// Obviously, this is not what we want for an android game as there is no keyboard key 'P'
-		// Let's change this.
-		if (Input.GetKeyUp(KeyCode.P))
-		{
-			Pause();
-		}
-		
 		if (paused || gameOver)
 			Time.timeScale = 0;
 		else
