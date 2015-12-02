@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour {
 	public float MIN_Y;
 	public float MAX_Y;
 
+
 	// Use this for initialization
 	void Start () {
 		// set the desired aspect ratio. These values are hard coded to 16:9.

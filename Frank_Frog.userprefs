@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerControlWater.cs">
     <Files>
-      <File FileName="Assets\Scripts\CameraController.cs" Line="28" Column="8" />
+      <File FileName="Frank_Frog.sln" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerControlWater.cs" Line="43" Column="44" />
+      <File FileName="Assets\Scripts\CameraController.cs" Line="23" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

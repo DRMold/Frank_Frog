@@ -26,10 +26,13 @@ public class PlayerControlWater : MonoBehaviour {
     public float speed = 250f;
     public Boundary boundary;
     public Rigidbody2D myBody; 
+	private Animator anim;
     Vector2 movement;
 
     void Start()
-    { }
+    {
+		anim = this.GetComponent<Animator> ();
+	}
 
     void FixedUpdate()  
     {
@@ -37,6 +40,10 @@ public class PlayerControlWater : MonoBehaviour {
 		//myBody.transform.rotation = Quaternion.identity;
 		float moveHorizontal = Input.GetAxis("Horizontal");
 		float moveVertical   = Input.GetAxis("Vertical");
+		if (moveHorizontal == 0 && moveVertical == 0)
+			anim.SetInteger ("speed", -1);
+		else 
+			anim.SetInteger ("speed", 1);
 		applyMovement (moveHorizontal, moveVertical);
     }
 
